@@ -131,6 +131,41 @@
         touch-action: manipulation;
       }
 
+      /* Enhanced touch targets for smaller screens */
+      @media (max-width: 767px) {
+        button,
+        input[type="submit"],
+        input[type="button"],
+        .register-btn,
+        .register-submit {
+          min-height: 48px;
+          min-width: 48px;
+        }
+
+        #scaleup-register .register-checkboxes input[type="checkbox"] {
+          min-width: 20px;
+          min-height: 20px;
+        }
+
+        #scaleup-highlights .highlight-slider-dot {
+          width: 12px;
+          height: 12px;
+          min-width: 12px;
+          min-height: 12px;
+        }
+      }
+
+      @media (max-width: 479px) {
+        button,
+        input[type="submit"],
+        input[type="button"],
+        .register-btn,
+        .register-submit {
+          min-height: 52px;
+          min-width: 52px;
+        }
+      }
+
       /* Improve focus states for accessibility */
       button:focus,
       input:focus,
@@ -273,6 +308,7 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+        text-align: left;
       }
       #scaleup-hero .date {
         font-family: "Aloevera Display", sans-serif;
@@ -323,17 +359,17 @@
         font-weight: 600;
       }
       #scaleup-hero .countdown-label {
-        font-size: 2.2rem;
+        font-size: 2rem;
         font-weight: 600;
-        margin-right: 32px;
+        /* margin-right: 32px; */
         color: #fff;
         letter-spacing: 1px;
       }
       #scaleup-hero .countdown-number {
-        font-size: 3.2rem;
+        font-size: 2.2rem;
         font-weight: 700;
         color: #fff;
-        margin: 0 8px 0 24px;
+        /* margin: 0 8px 0 24px; */
       }
       #scaleup-hero .countdown-number:first-of-type {
         margin-left: 0;
@@ -342,7 +378,7 @@
         font-size: 1.1rem;
         font-weight: 600;
         color: #fff;
-        margin-right: 16px;
+        /* margin-right: 16px; */
         letter-spacing: 0.5px;
       }
       #scaleup-hero .countdown-unit:last-of-type {
@@ -367,7 +403,7 @@
         justify-content: center;
         position: relative;
         overflow: hidden;
-        padding: 60px 0 60px 0;
+        padding: 60px 30px 60px 30px;
       }
       #scaleup-register .register-flex {
         display: flex;
@@ -425,6 +461,7 @@
         font-family: "MBF Cyber Samurai", sans-serif;
         color: #ff5100;
         font-size: 2.5rem;
+        font-weight: 400;
         margin-bottom: 16px;
         text-align: center;
         letter-spacing: 2px;
@@ -538,6 +575,7 @@
       #scaleup-register .register-info-col h3 {
         font-family: "MBF Cyber Samurai", sans-serif;
         font-size: 2rem;
+        font-weight: 400;
         text-align: center;
         color: #fff;
         margin-bottom: 12px;
@@ -546,6 +584,7 @@
       #scaleup-register .register-info-col h3 span {
         font-size: 2.5rem;
         font-family: "MBF Cyber Samurai", sans-serif;
+        font-weight: 400;
       }
       #scaleup-register .register-info-col h4 {
         font-size: 1.5rem;
@@ -641,6 +680,7 @@
         font-family: "MBF Cyber Samurai", sans-serif;
         color: #fff;
         font-size: 2.8rem;
+        font-weight: 400;
         letter-spacing: 2px;
         margin-bottom: 36px;
         text-align: center;
@@ -690,7 +730,7 @@
       #scaleup-app {
         width: 100%;
         background: #0e2a39;
-        padding: 64px 0 48px 0;
+        padding: 60px 30px 60px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -714,8 +754,9 @@
         font-weight: 400;
       }
       #scaleup-app .app-mockup-box {
-        width: 900px;
-        max-width: 98vw;
+        width: 100%;
+        /* width: 900px; */
+        /* max-width: 98vw; */
         min-height: 220px;
         background: linear-gradient(
           90deg,
@@ -739,7 +780,7 @@
         object-fit: contain;
         position: absolute;
         /* left: 50%; */
-        bottom: -28px;
+        bottom: 0;
         /* transform: translate(-50%, -50%) rotate(-15deg); */
         z-index: 2;
         pointer-events: none;
@@ -769,7 +810,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 32px;
+        /* gap: 32px; */
         margin-bottom: 12px;
         width: 100%;
         max-width: 900px;
@@ -780,6 +821,7 @@
         font-size: 1rem;
         text-align: center;
         max-width: 260px;
+        padding: 0 10px;
       }
       #scaleup-app .app-feature-key {
         font-weight: 700;
@@ -790,7 +832,7 @@
       #scaleup-app .app-feature:nth-child(2) {
         border-left: 2px solid #ff5100;
         border-right: 2px solid #ff5100;
-        padding: 0 16px;
+        /* padding: 0 16px; */
       }
 
       /* Highlight Section Styles */
@@ -813,7 +855,7 @@
         text-align: center;
         letter-spacing: 2px;
         margin-bottom: 18px;
-        font-weight: 700;
+        font-weight: 400;
         margin-top: 0;
       }
       #scaleup-highlights .highlight-slider-container {
@@ -868,6 +910,7 @@
         background: #eee;
         display: block;
       }
+      /* Enhanced Highlight Slider Responsive */
       @media (max-width: 1200px) {
         #scaleup-highlights .highlight-slider-container,
         #scaleup-highlights .highlight-slider {
@@ -876,7 +919,20 @@
           margin-right: -10vw;
         }
       }
-      @media (max-width: 900px) {
+      @media (max-width: 1023px) and (min-width: 900px) {
+        #scaleup-highlights .highlight-slide {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+        #scaleup-highlights .highlight-slide img {
+          height: 180px;
+        }
+        #scaleup-highlights .highlight-slider {
+          margin-left: -12vw;
+          margin-right: -12vw;
+        }
+      }
+      @media (max-width: 899px) and (min-width: 768px) {
         #scaleup-highlights .highlight-slide {
           flex: 0 0 50%;
           max-width: 50%;
@@ -889,7 +945,30 @@
           margin-right: -12vw;
         }
       }
-      @media (max-width: 600px) {
+      @media (max-width: 767px) and (min-width: 600px) {
+        #scaleup-highlights {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        #scaleup-highlights .highlight-slider-container,
+        #scaleup-highlights .highlight-slider {
+          max-width: 100vw;
+          margin-left: -8vw;
+          margin-right: -8vw;
+        }
+        #scaleup-highlights .highlight-slide {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0 6px;
+        }
+        #scaleup-highlights .highlight-slide img {
+          height: 140px;
+        }
+        #scaleup-highlights .highlight-slide--center {
+          transform: scale(1.08);
+        }
+      }
+      @media (max-width: 599px) and (min-width: 480px) {
         #scaleup-highlights {
           padding-left: 0;
           padding-right: 0;
@@ -910,6 +989,29 @@
         }
         #scaleup-highlights .highlight-slide--center {
           transform: scale(1.06);
+        }
+      }
+      @media (max-width: 479px) {
+        #scaleup-highlights {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        #scaleup-highlights .highlight-slider-container,
+        #scaleup-highlights .highlight-slider {
+          max-width: 100vw;
+          margin-left: -4vw;
+          margin-right: -4vw;
+        }
+        #scaleup-highlights .highlight-slide {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0 2px;
+        }
+        #scaleup-highlights .highlight-slide img {
+          height: 100px;
+        }
+        #scaleup-highlights .highlight-slide--center {
+          transform: scale(1.04);
         }
       }
       #scaleup-highlights .highlight-slider-dots {
@@ -1099,8 +1201,28 @@
 
       /* Enhanced Responsive Design */
 
-      /* Base responsive improvements */
-      @media (max-width: 1200px) {
+      /* Large Desktop (1400px+) */
+      @media (min-width: 1400px) {
+        #scaleup-hero .hero-content {
+          max-width: 1400px;
+        }
+        #scaleup-register .register-flex {
+          max-width: 1600px;
+        }
+        #scaleup-register .register-form {
+          max-width: 1400px;
+        }
+        #scaleup-highlights .highlight-slider-container {
+          max-width: 1400px;
+        }
+        #scaleup-speakers .speaker-grid {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 40px;
+        }
+      }
+
+      /* Desktop (1200px - 1399px) */
+      @media (max-width: 1399px) and (min-width: 1200px) {
         #scaleup-hero .hero-content {
           max-width: 95vw;
           padding: 20px 16px;
@@ -1124,12 +1246,13 @@
           gap: 16px 20px;
         }
         #scaleup-speakers .speaker-grid {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           gap: 32px 32px;
         }
       }
 
-      @media (max-width: 1024px) {
+      /* Laptop (1024px - 1199px) */
+      @media (max-width: 1199px) and (min-width: 1024px) {
         #scaleup-hero .hero-column-2 h1 {
           font-size: 2.8rem;
         }
@@ -1162,7 +1285,7 @@
           font-size: 2rem;
         }
         #scaleup-app .app-mockup-box {
-          width: 95vw;
+          /* width: 95vw; */
           margin-top: 80px;
         }
         #scaleup-app .app-mockup-img {
@@ -1174,9 +1297,14 @@
         #scaleup-speakers .speaker-title {
           font-size: 2rem;
         }
+        #scaleup-speakers .speaker-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 32px 32px;
+        }
       }
 
-      @media (max-width: 900px) {
+      /* Tablet Landscape (900px - 1023px) */
+      @media (max-width: 1023px) and (min-width: 900px) {
         #scaleup-hero .hero-main-content {
           flex-direction: column;
           gap: 30px;
@@ -1214,17 +1342,17 @@
           font-size: 2rem;
         }
         #scaleup-register .register-fields {
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr 1fr;
           gap: 16px;
         }
         #scaleup-register .register-info-row {
           margin-top: 16px;
-          flex-direction: column;
+          flex-direction: row;
           gap: 24px;
         }
         #scaleup-register .register-info-col {
-          align-items: center !important;
-          text-align: center !important;
+          align-items: flex-start !important;
+          text-align: left !important;
         }
         #scaleup-register .register-info-col h3 {
           font-size: 1.6rem;
@@ -1236,7 +1364,7 @@
           font-size: 1.2rem;
         }
         #scaleup-register .quote-block {
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
           gap: 16px;
           padding: 20px 0 8px 0;
@@ -1256,9 +1384,9 @@
         #scaleup-agenda .agenda-item {
           font-size: 1.1rem;
         }
-        #scaleup-app {
+        /* #scaleup-app {
           padding: 48px 0 32px 0;
-        }
+        } */
         #scaleup-app .app-headline {
           font-size: 1.8rem;
         }
@@ -1267,7 +1395,7 @@
           margin-bottom: 24px;
         }
         #scaleup-app .app-mockup-box {
-          width: 95vw;
+          /* width: 95vw; */
           min-height: 180px;
           margin-top: 60px;
         }
@@ -1280,19 +1408,21 @@
           bottom: 15%;
         }
         #scaleup-app .app-features-row {
-          gap: 20px;
-          flex-direction: column;
+          /* gap: 20px; */
+          flex-direction: row;
           align-items: center;
         }
         #scaleup-app .app-feature {
           font-size: 0.95rem;
-          max-width: 90vw;
-          border: none !important;
-          padding: 0 !important;
+          max-width: 30%;
+          border-left: 2px solid #ff5100;
+          border-right: 2px solid #ff5100;
+          /* padding: 0 16px; */
         }
         #scaleup-app .app-feature:nth-child(2) {
-          border: none;
-          padding: 0;
+          border-left: 2px solid #ff5100;
+          border-right: 2px solid #ff5100;
+          /* padding: 0 16px; */
         }
         #scaleup-highlights {
           padding: 40px 0 40px 0;
@@ -1315,7 +1445,7 @@
           margin-top: 32px;
         }
         #scaleup-speakers .speaker-grid {
-          grid-template-columns: 1fr;
+          grid-template-columns: repeat(2, 1fr);
           gap: 24px 24px;
         }
         #scaleup-speakers .speaker-card-modern {
@@ -1332,10 +1462,168 @@
           font-size: 0.9rem;
           margin-bottom: 12px;
         }
-        #scaleup-speakers .speaker-grid {
+        #scaleup-speakers {
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+      }
+
+      /* Tablet Portrait (768px - 899px) */
+      @media (max-width: 899px) and (min-width: 768px) {
+        #scaleup-hero .hero-main-content {
+          flex-direction: column;
+          gap: 25px;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        #scaleup-hero .hero-column-2 {
+          text-align: center;
+        }
+        #scaleup-hero .hero-column-2 h1 {
+          font-size: 2.2rem;
+        }
+        #scaleup-hero .hero-column-2 h2 {
+          font-size: 1.3rem;
+          margin-bottom: 1.5rem;
+        }
+        #scaleup-hero .event-details {
+          justify-content: center;
+          gap: 20px;
+        }
+        #scaleup-hero .date {
+          font-size: 1.5rem;
+        }
+        #scaleup-hero .time,
+        #scaleup-hero .location {
+          font-size: 1rem;
+        }
+        #scaleup-hero .register-btn {
+          font-size: 16px;
+        }
+        #scaleup-register .register-form {
+          padding: 20px 16px 16px 16px;
+        }
+        #scaleup-register .register-title {
+          font-size: 1.8rem;
+        }
+        #scaleup-register .register-fields {
           grid-template-columns: 1fr;
-          gap: 24px 24px;
-          justify-items: center;
+          gap: 16px;
+        }
+        #scaleup-register .register-info-row {
+          margin-top: 16px;
+          flex-direction: column;
+          gap: 24px;
+        }
+        #scaleup-register .register-info-col {
+          align-items: center !important;
+          text-align: center !important;
+        }
+        #scaleup-register .register-info-col h3 {
+          font-size: 1.5rem;
+        }
+        #scaleup-register .register-info-col h3 span {
+          font-size: 1.9rem;
+        }
+        #scaleup-register .register-info-col h4 {
+          font-size: 1.1rem;
+        }
+        #scaleup-register .quote-block {
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+          padding: 20px 0 8px 0;
+        }
+        #scaleup-register .quote-text {
+          font-size: 1rem;
+          align-items: center;
+        }
+        #scaleup-agenda .agenda-main-content {
+          max-width: 95vw;
+          padding: 40px 0 40px 0;
+        }
+        #scaleup-agenda .agenda-title {
+          font-size: 2rem;
+          margin-bottom: 24px;
+        }
+        #scaleup-agenda .agenda-item {
+          font-size: 1rem;
+        }
+        /* #scaleup-app {
+          padding: 48px 0 32px 0;
+        } */
+        #scaleup-app .app-headline {
+          font-size: 1.6rem;
+        }
+        #scaleup-app .app-subheadline {
+          font-size: 1rem;
+          margin-bottom: 24px;
+        }
+        #scaleup-app .app-mockup-box {
+          /* width: 95vw; */
+          min-height: 160px;
+          margin-top: 50px;
+        }
+        #scaleup-app .app-mockup-img {
+          height: 240px;
+        }
+        #scaleup-app .app-mockup-text {
+          font-size: 0.9rem;
+          left: 8%;
+          bottom: 12%;
+        }
+        #scaleup-app .app-features-row {
+          /* gap: 16px; */
+          flex-direction: column;
+          align-items: center;
+        }
+        #scaleup-app .app-feature {
+          font-size: 0.9rem;
+          max-width: 90vw;
+          border: none !important;
+          /* padding: 0 !important; */
+        }
+        #scaleup-app .app-feature:nth-child(2) {
+          border: none;
+          /* padding: 0; */
+        }
+        #scaleup-highlights {
+          padding: 40px 0 40px 0;
+        }
+        #scaleup-highlights .highlight-title {
+          font-size: 1.8rem;
+        }
+        #scaleup-highlights .highlight-slide {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+        #scaleup-highlights .highlight-slide img {
+          height: 140px;
+        }
+        #scaleup-speakers {
+          padding: 48px 0 32px 0;
+        }
+        #scaleup-speakers .speaker-title {
+          font-size: 1.6rem;
+          margin-top: 32px;
+        }
+        #scaleup-speakers .speaker-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px 20px;
+        }
+        #scaleup-speakers .speaker-card-modern {
+          width: 100%;
+          height: 180px;
+        }
+        #scaleup-speakers .speaker-info-content {
+          padding: 20px 12px 12px 20px;
+        }
+        #scaleup-speakers .speaker-name {
+          font-size: 1rem;
+        }
+        #scaleup-speakers .speaker-title-role {
+          font-size: 0.85rem;
+          margin-bottom: 10px;
         }
         #scaleup-speakers {
           padding-left: 12px;
@@ -1343,18 +1631,8 @@
         }
       }
 
-      @media (max-width: 600px) {
-        #scaleup-speakers {
-          padding-left: 4vw;
-          padding-right: 4vw;
-        }
-        #scaleup-speakers .speaker-card-modern {
-          max-width: 98vw;
-          height: 160px;
-        }
-      }
-
-      @media (max-width: 768px) {
+      /* Mobile Large (600px - 767px) */
+      @media (max-width: 767px) and (min-width: 600px) {
         #scaleup-hero .top-banner {
           padding: 16px 8px 0 8px;
         }
@@ -1500,9 +1778,9 @@
           max-width: 90vw;
           margin: -4px 0 14px 0;
         }
-        #scaleup-app {
+        /* #scaleup-app {
           padding: 32px 0 24px 0;
-        }
+        } */
         #scaleup-app .app-headline {
           font-size: 1.2rem;
         }
@@ -1511,7 +1789,7 @@
           margin-bottom: 20px;
         }
         #scaleup-app .app-mockup-box {
-          width: 98vw;
+          /* width: 98vw; */
           min-height: 160px;
           margin-top: 40px;
         }
@@ -1528,7 +1806,7 @@
           margin: 24px 0 12px 0;
         }
         #scaleup-app .app-features-row {
-          gap: 16px;
+          /* gap: 16px; */
         }
         #scaleup-app .app-feature {
           font-size: 0.95rem;
@@ -1572,9 +1850,14 @@
           font-size: 0.85rem;
           margin-bottom: 8px;
         }
+        #scaleup-speakers {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
       }
 
-      @media (max-width: 480px) {
+      /* Mobile Medium (480px - 599px) */
+      @media (max-width: 599px) and (min-width: 480px) {
         #scaleup-hero .hero-content {
           padding: 12px 8px;
         }
@@ -1694,6 +1977,144 @@
         #scaleup-speakers .speaker-title-role {
           font-size: 0.8rem;
         }
+        #scaleup-speakers {
+          padding-left: 4px;
+          padding-right: 4px;
+        }
+      }
+
+      /* Mobile Small (320px - 479px) */
+      @media (max-width: 479px) {
+        #scaleup-hero .top-banner {
+          padding: 12px 4px 0 4px;
+        }
+        #scaleup-hero .top-banner img {
+          max-height: 24px;
+        }
+        #scaleup-hero .hero-content {
+          padding: 8px 4px;
+        }
+        #scaleup-hero .hero-column-2 h1 {
+          font-size: 1.6rem;
+        }
+        #scaleup-hero .hero-column-2 h2 {
+          font-size: 1rem;
+        }
+        #scaleup-hero .date {
+          font-size: 1.1rem;
+        }
+        #scaleup-hero .time,
+        #scaleup-hero .location {
+          font-size: 0.85rem;
+        }
+        #scaleup-hero .register-btn {
+          padding: 8px 20px;
+          font-size: 13px;
+        }
+        #scaleup-hero .countdown-timer {
+          padding: 6px 2px;
+          gap: 6px;
+          margin: 24px auto 0 auto;
+        }
+        #scaleup-hero .countdown-label {
+          font-size: 0.8rem;
+          margin-right: 6px;
+        }
+        #scaleup-hero .countdown-number {
+          font-size: 1.4rem;
+          margin: 0 1px 0 4px;
+        }
+        #scaleup-hero .countdown-unit {
+          font-size: 0.6rem;
+          margin-right: 4px;
+        }
+        #scaleup-register {
+          padding: 20px 0 20px 0;
+        }
+        #scaleup-register .register-form {
+          padding: 12px 6px 6px 6px;
+        }
+        #scaleup-register .register-title {
+          font-size: 1.4rem;
+        }
+        #scaleup-register .register-desc {
+          font-size: 0.9rem;
+        }
+        #scaleup-register .register-fields input {
+          padding: 8px 10px;
+          font-size: 0.85rem;
+        }
+        #scaleup-register .register-checkboxes {
+          font-size: 0.8rem;
+        }
+        #scaleup-register .register-submit {
+          padding: 8px 20px;
+          font-size: 0.95rem;
+        }
+        #scaleup-register .register-info-col h3 {
+          font-size: 1.1rem;
+        }
+        #scaleup-register .register-info-col h3 span {
+          font-size: 1.4rem;
+        }
+        #scaleup-register .register-info-col h4 {
+          font-size: 0.95rem;
+        }
+        #scaleup-register .register-info-col p {
+          font-size: 0.9rem;
+        }
+        #scaleup-register .quote-text {
+          font-size: 0.85rem;
+        }
+        #scaleup-register .quote-author {
+          font-size: 0.8rem;
+        }
+        #scaleup-agenda .agenda-title {
+          font-size: 1.4rem;
+        }
+        #scaleup-agenda .agenda-item {
+          font-size: 0.85rem;
+        }
+        #scaleup-app .app-headline {
+          font-size: 0.9rem;
+        }
+        #scaleup-app .app-subheadline {
+          font-size: 0.85rem;
+        }
+        #scaleup-app .app-mockup-box {
+          min-height: 100px;
+        }
+        #scaleup-app .app-mockup-img {
+          height: 80px;
+        }
+        #scaleup-app .app-mockup-text {
+          font-size: 0.7rem;
+        }
+        #scaleup-app .app-feature {
+          font-size: 0.85rem;
+        }
+        #scaleup-highlights .highlight-title {
+          font-size: 1.2rem;
+        }
+        #scaleup-highlights .highlight-slide img {
+          height: 80px;
+        }
+        #scaleup-speakers .speaker-title {
+          font-size: 0.9rem;
+        }
+        #scaleup-speakers .speaker-card-modern {
+          height: 140px;
+        }
+        #scaleup-speakers .speaker-name {
+          font-size: 0.85rem;
+        }
+        #scaleup-speakers .speaker-title-role {
+          font-size: 0.75rem;
+        }
+        #scaleup-speakers {
+          padding-left: 2px;
+          padding-right: 2px;
+        }
       }
 
       /* Landscape orientation adjustments for mobile */
@@ -1720,14 +2141,72 @@
         #scaleup-agenda .agenda-main-content {
           padding: 24px 0 24px 0;
         }
-        #scaleup-app {
+        /* #scaleup-app {
           padding: 24px 0 16px 0;
-        }
+        } */
         #scaleup-highlights {
           padding: 24px 0 24px 0;
         }
         #scaleup-speakers {
           padding: 24px 0 16px 0;
+        }
+      }
+
+      /* Additional responsive improvements */
+      @media (max-width: 1023px) {
+        #scaleup-register .register-parallax {
+          opacity: 0.3;
+        }
+      }
+
+      @media (max-width: 767px) {
+        #scaleup-register .register-parallax {
+          display: none;
+        }
+
+        /* Improve form spacing on mobile */
+        #scaleup-register .register-fields {
+          margin-bottom: 20px;
+        }
+
+        #scaleup-register .register-checkboxes {
+          margin-bottom: 20px;
+        }
+
+        /* Better spacing for agenda items */
+        #scaleup-agenda .agenda-item {
+          margin-bottom: 16px;
+        }
+
+        #scaleup-agenda .agenda-separator {
+          margin-bottom: 16px;
+        }
+      }
+
+      /* Ensure proper spacing on very small screens */
+      @media (max-width: 479px) {
+        #scaleup-hero .hero-main-content {
+          gap: 20px;
+        }
+
+        #scaleup-register .register-form {
+          margin: 0 4px;
+        }
+
+        #scaleup-agenda .agenda-main-content {
+          padding: 24px 8px;
+        }
+        /* 
+        #scaleup-app {
+          padding: 24px 8px;
+        } */
+
+        #scaleup-highlights {
+          padding: 24px 8px;
+        }
+
+        #scaleup-speakers {
+          padding: 24px 8px;
         }
       }
 
@@ -2379,12 +2858,20 @@
         let intervalId;
 
         function updateSlidesPerView() {
-          if (window.innerWidth <= 480) {
+          if (window.innerWidth <= 479) {
             slidesPerView = 1;
-          } else if (window.innerWidth <= 768) {
+          } else if (window.innerWidth <= 599) {
             slidesPerView = 1;
-          } else if (window.innerWidth <= 900) {
+          } else if (window.innerWidth <= 767) {
+            slidesPerView = 1;
+          } else if (window.innerWidth <= 899) {
             slidesPerView = 2;
+          } else if (window.innerWidth <= 1023) {
+            slidesPerView = 2;
+          } else if (window.innerWidth <= 1199) {
+            slidesPerView = 2;
+          } else if (window.innerWidth <= 1399) {
+            slidesPerView = 3;
           } else {
             slidesPerView = 3;
           }

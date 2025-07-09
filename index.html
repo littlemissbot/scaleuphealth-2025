@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scale-Up Health 2025</title>
+    <style>
+      /* Font Declarations */
+      @font-face {
+        font-family: "Aloevera Display";
+        src: url("assets/fonts/Aloevera display/Aloevera display/WOFF2/AloeveraDisplay-Thin.woff2")
+          format("woff2");
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aloevera Display";
+        src: url("assets/fonts/Aloevera display/Aloevera display/WOFF2/AloeveraDisplay-ExtraLight.woff2")
+          format("woff2");
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aloevera Display";
+        src: url("assets/fonts/Aloevera display/Aloevera display/WOFF2/AloeveraDisplay-Light.woff2")
+          format("woff2");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aloevera Display";
+        src: url("assets/fonts/Aloevera display/Aloevera display/WOFF2/AloeveraDisplay-Regular.woff2")
+          format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aloevera Display";
+        src: url("assets/fonts/Aloevera display/Aloevera display/WOFF2/AloeveraDisplay-Medium.woff2")
+          format("woff2");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aloevera Display";
+        src: url("assets/fonts/Aloevera display/Aloevera display/WOFF2/AloeveraDisplay-SemiBold.woff2")
+          format("woff2");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aloevera Display";
+        src: url("assets/fonts/Aloevera display/Aloevera display/WOFF2/AloeveraDisplay-Bold.woff2")
+          format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aloevera Display";
+        src: url("assets/fonts/Aloevera display/Aloevera display/WOFF2/AloeveraDisplay-ExtraBold.woff2")
+          format("woff2");
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Aloevera Display";
+        src: url("assets/fonts/Aloevera display/Aloevera display/WOFF2/AloeveraDisplay-Black.woff2")
+          format("woff2");
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* MBF Cyber Samurai */
+      @font-face {
+        font-family: "MBF Cyber Samurai";
+        src: url("assets/fonts/MBF CYBER SAMURAI/MBF CYBER SAMURAI.otf")
+          format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* Simplon Norm */
+      @font-face {
+        font-family: "Simplon Norm";
+        src: url("assets/fonts/Simplon norm/Simplon Norm.otf")
+          format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Simplon Norm";
+        src: url("assets/fonts/Simplon norm/SimplonNorm-Bold.otf")
+          format("opentype");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .top-banner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 32px 0 32px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .top-banner img {
+        max-height: 40px;
+        width: auto;
+      }
+
+      @media (max-width: 768px) {
+        .top-banner {
+          padding: 16px 8px 0 8px;
+        }
+        .top-banner img {
+          max-height: 28px;
+        }
+      }
+
+      .hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: white;
+        max-width: 1200px;
+        padding: 20px 20px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .hero-main-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 60px;
+      }
+      .hero-column-1 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+      .hero-column-2 {
+        flex: 1;
+        text-align: left;
+      }
+      .banner-center {
+        max-width: 100%;
+        height: auto;
+      }
+      .register-btn {
+        background: #ff5c00;
+        color: white;
+        border: none;
+        padding: 8px 100px;
+        border-radius: 50px;
+        font-family: "Simplon Norm", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 4;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .register-btn:hover {
+        background: #e54d00;
+        transform: translateY(-2px);
+      }
+      .hero-column-1 img {
+        margin-bottom: 1rem;
+      }
+      .hero-column-2 h1 {
+        font-family: "MBF Cyber Samurai", sans-serif;
+        font-size: 3.5rem;
+        /* margin-bottom: 1rem; */
+        font-weight: 400;
+        line-height: 1;
+      }
+      .hero-column-2 h2 {
+        font-family: "Aloevera Display", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        line-height: 1.2;
+        opacity: 0.9;
+      }
+      .event-details {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+      }
+      .event-date {
+        display: flex;
+        flex-direction: column;
+      }
+      .event-time-location {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .date {
+        font-family: "Aloevera Display", sans-serif;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+      }
+      .time {
+        font-family: "Aloevera Display", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+      }
+      .location {
+        font-family: "Aloevera Display", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+      }
+      @media (max-width: 768px) {
+        .hero-main-content {
+          flex-direction: column;
+          gap: 40px;
+        }
+        .hero-column-2 {
+          text-align: center;
+        }
+        .hero-column-2 h1 {
+          font-size: 2.5rem;
+        }
+        .hero-column-2 h2 {
+          font-size: 1.4rem;
+        }
+        .event-details {
+          justify-content: center;
+          gap: 30px;
+        }
+        .date {
+          font-size: 1.5rem;
+        }
+        .time {
+          font-size: 1.2rem;
+        }
+        .location {
+          font-size: 1rem;
+        }
+        .register-btn {
+          padding: 12px 30px;
+          font-size: 16px;
+        }
+      }
+      .hero-image {
+        display: none; /* Hide the placeholder image since we're using video */
+      }
+      .hero-banner-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+      .hero-banner-row img {
+        max-height: 40px;
+        width: auto;
+      }
+      @media (max-width: 768px) {
+        .hero-banner-row {
+          margin-bottom: 16px;
+        }
+        .hero-banner-row img {
+          max-height: 28px;
+        }
+      }
+      .countdown-timer {
+        font-family: "Simplon Norm", Arial, sans-serif;
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid #fff;
+        border-radius: 999px;
+        padding: 24px 48px;
+        margin: 48px auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        width: fit-content;
+        font-weight: 600;
+      }
+      .countdown-label {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-right: 32px;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      .countdown-number {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 8px 0 24px;
+      }
+      .countdown-number:first-of-type {
+        margin-left: 0;
+      }
+      .countdown-unit {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #fff;
+        margin-right: 16px;
+        letter-spacing: 0.5px;
+      }
+      .countdown-unit:last-of-type {
+        margin-right: 0;
+      }
+      @media (max-width: 768px) {
+        .countdown-timer {
+          padding: 12px 8px;
+          gap: 12px;
+        }
+        .countdown-label {
+          font-size: 1.1rem;
+          margin-right: 12px;
+        }
+        .countdown-number {
+          font-size: 2rem;
+          margin: 0 4px 0 10px;
+        }
+        .countdown-unit {
+          font-size: 0.8rem;
+          margin-right: 8px;
+        }
+      }
+      .event-icon {
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: middle;
+        margin-right: 0.5em;
+        margin-bottom: 0.15em;
+      }
+
+      /* Registration & Info Section */
+      .register-section {
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(180deg, #4f6b74 0%, #042c39 100%);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        padding: 60px 0 60px 0;
+      }
+      .register-flex {
+        display: flex;
+        width: 100%;
+        max-width: 1400px;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+      .register-parallax {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -5%;
+        z-index: 0;
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+      }
+      .parallax-img {
+        width: 260px;
+        height: auto;
+        position: sticky;
+        top: 0;
+        left: 0;
+        will-change: transform;
+      }
+      .register-main-content {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+      .register-form-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+      .register-form {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 32px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+        padding: 40px 32px 32px 32px;
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .register-title {
+        font-family: "MBF Cyber Samurai", sans-serif;
+        color: #ff5100;
+        font-size: 2.5rem;
+        margin-bottom: 16px;
+        text-align: center;
+        letter-spacing: 2px;
+      }
+      .register-desc {
+        color: #fff;
+        font-size: 1.1rem;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+      .register-fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 24px;
+        width: 100%;
+        margin-bottom: 24px;
+      }
+      .register-fields input {
+        border: none;
+        border-radius: 20px;
+        padding: 14px 20px;
+        font-size: 1rem;
+        font-family: "Simplon Norm", Arial, sans-serif;
+        background: #bfc9c9;
+        color: #222;
+        outline: none;
+        width: 100%;
+      }
+      .register-checkboxes {
+        width: 100%;
+        margin-bottom: 24px;
+        color: #fff;
+        font-size: 0.95rem;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .register-checkboxes label {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .register-submit {
+        background: linear-gradient(90deg, #ff5100 0%, #ff7b00 100%);
+        color: #fff;
+        border: none;
+        border-radius: 999px;
+        padding: 14px 48px;
+        font-size: 1.2rem;
+        font-family: "Simplon Norm", Arial, sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        cursor: pointer;
+        margin-top: 12px;
+        transition: background 0.2s, transform 0.2s;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+      }
+      .register-submit:hover {
+        background: linear-gradient(90deg, #ff7b00 0%, #ff5100 100%);
+        transform: translateY(-2px);
+      }
+      .register-info-row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 32px;
+        color: #fff;
+        margin: 40px 0 0 0;
+        max-width: 1200px;
+      }
+      .register-info-col {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 0;
+      }
+      .left-info {
+        align-items: flex-start;
+        text-align: left;
+      }
+      /* .right-info {
+        align-items: flex-end;
+        text-align: right;
+      } */
+      .register-info-col h3 {
+        font-family: "MBF Cyber Samurai", sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+      }
+      .register-info-col span {
+        font-size: 2.5rem;
+        color: #ff5100;
+        font-family: "MBF Cyber Samurai", sans-serif;
+      }
+      .register-info-col h4 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #fff;
+        font-family: "Aloevera Display", sans-serif;
+      }
+      .register-info-col b {
+        color: #ff5100;
+      }
+      .register-info-col p {
+        font-size: 1.05rem;
+        margin-bottom: 12px;
+        color: #e0e0e0;
+      }
+      /* Quote Block */
+      .quote-block {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        padding: 0 0 16px 0;
+        position: relative;
+        z-index: 1;
+      }
+      .quote-icon {
+        width: 36px;
+        height: auto;
+      }
+      .open-quote {
+        align-self: flex-start;
+        margin-right: 18px;
+      }
+      .close-quote {
+        align-self: flex-end;
+        margin-left: 18px;
+      }
+      .quote-text {
+        color: #fff;
+        font-family: "Simplon Norm", Arial, sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-align: center;
+        flex: 1 1 auto;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .quote-author {
+        color: #ff5100;
+        font-weight: 600;
+        margin-left: 8px;
+        display: block;
+        text-align: right;
+      }
+      @media (max-width: 1200px) {
+        .register-info-row,
+        .quote-block,
+        .register-form {
+          max-width: 98vw;
+        }
+      }
+      @media (max-width: 900px) {
+        .register-form {
+          padding: 24px 8px 16px 8px;
+        }
+        .register-info-row {
+          margin-top: 16px;
+        }
+      }
+      @media (max-width: 700px) {
+        .register-section {
+          padding: 24px 0 0 0;
+        }
+        .register-flex {
+          flex-direction: column;
+          gap: 24px;
+        }
+        .register-form-row {
+          margin-bottom: 24px;
+        }
+        .register-info-row {
+          flex-direction: column;
+          gap: 18px;
+          margin: 24px 0 0 0;
+        }
+        .register-info-col {
+          align-items: flex-start !important;
+          text-align: left !important;
+        }
+        .quote-block {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 18px 0 8px 0;
+        }
+        .quote-icon {
+          width: 28px;
+        }
+        .quote-text {
+          font-size: 1rem;
+          align-items: flex-start;
+        }
+        .quote-author {
+          font-size: 0.95rem;
+        }
+      }
+
+      /* Agenda Section Styles */
+      .agenda-section {
+        /* width: 100vw;
+        min-height: 100vh; */
+        background: linear-gradient(
+          120deg,
+          #1a2a36 0%,
+          #2b3e50 60%,
+          #ff5100 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        position: relative;
+      }
+      .agenda-main-content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* min-height: 100vh; */
+        padding: 60px 0 60px 0;
+      }
+      .agenda-title {
+        font-family: "MBF Cyber Samurai", sans-serif;
+        color: #fff;
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+        margin-bottom: 36px;
+        text-align: center;
+      }
+      .agenda-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .agenda-item {
+        color: #fff;
+        font-family: "Aloevera Display", sans-serif;
+        font-size: 1.15rem;
+        font-weight: 200;
+        text-align: center;
+        margin: 0 0 18px 0;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+      }
+      .agenda-separator {
+        width: 100%;
+        max-width: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: -6px 0 18px 0;
+      }
+      .agenda-line {
+        flex: 1 1 40px;
+        height: 1px;
+        background: #fff;
+        opacity: 0.35;
+        border-radius: 2px;
+        max-width: 100px;
+      }
+      .agenda-triangle {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        filter: brightness(1.1) saturate(1.5);
+      }
+      @media (max-width: 700px) {
+        .agenda-main-content {
+          max-width: 98vw;
+          min-height: 80vh;
+        }
+        .agenda-title {
+          font-size: 2rem;
+        }
+        .agenda-item {
+          font-size: 1rem;
+        }
+        .agenda-triangle {
+          width: 12px;
+          height: 12px;
+        }
+        .agenda-separator {
+          max-width: 90vw;
+        }
+      }
+
+      /* App Section Styles */
+      .app-section {
+        width: 100%;
+        background: #0e2a39;
+        padding: 64px 0 48px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .app-headline {
+        font-family: "MBF Cyber Samurai", sans-serif;
+        color: #ff5100;
+        font-size: 2.2rem;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 18px;
+        font-weight: 400;
+      }
+      .app-subheadline {
+        color: #fff;
+        font-family: "Simplon Norm", Arial, sans-serif;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 36px;
+        font-weight: 400;
+      }
+      .app-mockup-box {
+        width: 900px;
+        max-width: 98vw;
+        min-height: 220px;
+        background: linear-gradient(
+          90deg,
+          #ff5100 0%,
+          #2b3e50 60%,
+          #ff5100 100%
+        );
+        border-radius: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto 32px auto;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+        /* overflow: hidden; */
+        margin-top: 100px;
+      }
+      .app-mockup-img {
+        height: 400px;
+        max-width: 60%;
+        object-fit: contain;
+        position: absolute;
+        /* left: 50%; */
+        bottom: -28px;
+        /* transform: translate(-50%, -50%) rotate(-15deg); */
+        z-index: 2;
+        pointer-events: none;
+      }
+      .app-mockup-text {
+        position: absolute;
+        left: 8%;
+        bottom: 18%;
+        color: #fff;
+        font-family: "MBF Cyber Samurai", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        z-index: 3;
+        text-align: left;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      }
+      .app-features-desc {
+        color: #fff;
+        font-family: "Simplon Norm", Arial, sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        margin: 32px 0 18px 0;
+        opacity: 0.85;
+      }
+      .app-features-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        margin-bottom: 12px;
+        width: 100%;
+        max-width: 900px;
+      }
+      .app-feature {
+        color: #fff;
+        font-family: "Simplon Norm", Arial, sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        max-width: 260px;
+      }
+      .app-feature-key {
+        font-weight: 700;
+        font-family: "Simplon Norm", Arial, sans-serif;
+        margin-right: 4px;
+        color: #ff5100;
+      }
+      .app-feature:nth-child(2) {
+        border-left: 2px solid #ff5100;
+        border-right: 2px solid #ff5100;
+        padding: 0 16px;
+      }
+      @media (max-width: 700px) {
+        .app-section {
+          padding: 32px 0 24px 0;
+        }
+        .app-headline {
+          font-size: 1.2rem;
+        }
+        .app-mockup-box {
+          width: 98vw;
+          min-height: 160px;
+        }
+        .app-mockup-img {
+          height: 140px;
+        }
+        .app-mockup-text {
+          font-size: 0.9rem;
+          left: 10%;
+          bottom: 10%;
+        }
+        .app-features-row {
+          gap: 16px;
+        }
+        .app-feature {
+          font-size: 0.95rem;
+          max-width: 98vw;
+        }
+      }
+
+      /* Highlight Section Styles */
+      .highlight-section {
+        width: 100%;
+        background: #5be0c4;
+        padding: 64px 0 48px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .highlight-title {
+        font-family: "MBF Cyber Samurai", sans-serif;
+        color: #ff5100;
+        font-size: 2.2rem;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 18px;
+        font-weight: 400;
+      }
+      .highlight-slider-container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        padding: 60px 0 60px 0;
+      }
+      .highlight-slider {
+        display: flex;
+        transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+        will-change: transform;
+      }
+      .highlight-slide {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .highlight-slide img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 18px;
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+        background: #eee;
+        display: block;
+      }
+      .highlight-slider-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 18px;
+      }
+      .highlight-slider-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #bbb;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: background 0.2s, opacity 0.2s;
+      }
+      .highlight-slider-dot.active {
+        background: #ff5100;
+        opacity: 1;
+      }
+      @media (max-width: 900px) {
+        .highlight-slide {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+        .highlight-slide img {
+          height: 160px;
+        }
+      }
+      @media (max-width: 600px) {
+        .highlight-slide {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .highlight-slide img {
+          height: 120px;
+        }
+      }
+
+      /* Speaker Section Styles */
+      .speaker-section {
+        width: 100%;
+        background: #042c39;
+        padding: 64px 0 48px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .speaker-title {
+        font-family: "MBF Cyber Samurai", sans-serif;
+        color: #ff5100;
+        font-size: 2.2rem;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 32px;
+        font-weight: 400;
+      }
+      .speaker-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px 32px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .speaker-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 0;
+        min-height: 170px;
+        position: relative;
+        overflow: hidden;
+      }
+      .accent-bg {
+        background: linear-gradient(90deg, #b2f0e6 0%, #e6f7f3 100%);
+      }
+      .gray-bg {
+        background: #e6e6e6;
+      }
+      .speaker-accent {
+        width: 32px;
+        height: 100%;
+        background: #3fd0b7;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+        z-index: 1;
+      }
+      .gray-bg .speaker-accent {
+        background: #bdbdbd;
+      }
+      .speaker-img {
+        width: 80px;
+        height: 120px;
+        object-fit: contain;
+        margin: 0 18px 0 40px;
+        border-radius: 12px;
+        background: #fff;
+        z-index: 2;
+      }
+      .speaker-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 2;
+        padding: 0 18px 0 0;
+      }
+      .speaker-name {
+        font-family: "Aloevera Display", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 2px;
+      }
+      .speaker-title-role {
+        font-family: "Simplon Norm", Arial, sans-serif;
+        font-size: 0.95rem;
+        color: #222;
+        margin-bottom: 8px;
+        font-weight: 400;
+      }
+      @media (max-width: 900px) {
+        .speaker-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 600px) {
+        .speaker-grid {
+          grid-template-columns: 1fr;
+        }
+        .speaker-card {
+          min-height: 140px;
+        }
+        .speaker-img {
+          width: 60px;
+          height: 90px;
+          margin: 0 10px 0 24px;
+        }
+      }
+      .speaker-card-modern {
+        display: flex;
+        width: 480px;
+        height: 220px;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.18);
+        overflow: hidden;
+        margin: 0 auto 32px auto;
+        position: relative;
+      }
+      .speaker-img-half {
+        flex: 1 1 50%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+      }
+      .speaker-img-modern {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(1);
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+      }
+      .speaker-info-half {
+        flex: 1 1 50%;
+        height: 100%;
+        background: linear-gradient(120deg, #5be0c4 0%, #aee9e0 100%);
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .speaker-notch {
+        position: absolute;
+        left: -18px;
+        top: 25px;
+        width: 20px;
+        height: 25px;
+        background: #5be0c4;
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        z-index: 2;
+        transform: rotate(180deg);
+      }
+      .speaker-info-content {
+        padding: 32px 24px 24px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        justify-content: space-between;
+      }
+      .speaker-name {
+        font-family: "Aloevera Display", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 6px;
+      }
+      .speaker-title-role {
+        font-family: "Simplon Norm", Arial, sans-serif;
+        font-size: 1rem;
+        color: #222;
+        margin-bottom: 18px;
+        font-weight: 400;
+      }
+      @media (max-width: 600px) {
+        .speaker-card-modern {
+          width: 98vw;
+          height: 160px;
+        }
+        .speaker-info-content {
+          padding: 18px 10px 10px 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/bg-banner.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <!-- <div class="hero-overlay"></div> -->
+      <div class="hero-content">
+        <div class="hero-banner-row">
+          <img
+            src="assets/top-banner-left.svg"
+            alt="Top Banner Left"
+            class="top-banner-left"
+          />
+          <img
+            src="assets/top-banner-right.svg"
+            alt="Top Banner Right"
+            class="top-banner-right"
+          />
+        </div>
+        <div>
+          <div class="hero-main-content">
+            <div class="hero-column-1">
+              <img
+                src="assets/banner-center.svg"
+                alt="Banner Center"
+                class="banner-center"
+              />
+            </div>
+            <div class="hero-column-2">
+              <h1>India's healthcare decade</h1>
+            </div>
+          </div>
+          <div class="hero-main-content">
+            <div class="hero-column-1">
+              <button class="register-btn">REGISTER</button>
+            </div>
+            <div class="hero-column-2">
+              <h2>Innovation, Expansion & Global Influence</h2>
+              <div class="event-details">
+                <div class="event-date">
+                  <span class="date">10.09.25</span>
+                </div>
+                <div class="event-time-location">
+                  <span class="time"
+                    ><img
+                      src="assets/time.svg"
+                      alt="Time"
+                      class="event-icon"
+                    />2:00pm</span
+                  >
+                  <span class="location"
+                    ><img
+                      src="assets/venue.svg"
+                      alt="Venue"
+                      class="event-icon"
+                    />Four Seasons Hotel Mumbai</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="countdown-timer">
+          <span class="countdown-label">Countdown Begins</span>
+          <span class="countdown-number" id="countdown-days">60</span
+          ><span class="countdown-unit">Days</span>
+          <span class="countdown-number" id="countdown-hours">59</span
+          ><span class="countdown-unit">Hours</span>
+          <span class="countdown-number" id="countdown-minutes">59</span
+          ><span class="countdown-unit">Minutes</span>
+        </div>
+      </div>
+    </section>
+    <!-- Registration & Info Section -->
+    <section class="register-section">
+      <div class="register-parallax">
+        <img src="assets/triengle.svg" alt="Decorative" class="parallax-img" />
+      </div>
+      <div class="register-flex">
+        <div class="register-main-content">
+          <!-- Form Section -->
+          <div class="register-form-row">
+            <form class="register-form">
+              <h2 class="register-title">ATTEND SCALE-UP HEALTH 2025</h2>
+              <p class="register-desc">
+                Please use the form below to register your interest to attend
+                Scale-Up Health.<br />We will review your registration and keep
+                you updated via email.
+              </p>
+              <div class="register-fields">
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+                <input type="text" placeholder="Company" />
+                <input type="text" placeholder="Job Title" />
+                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="Location" />
+              </div>
+              <div class="register-checkboxes">
+                <label
+                  ><input type="checkbox" /> I have read, understood and consent
+                  to Eight Roads’ Privacy Policy, Cookie Policy and Terms of
+                  Use.</label
+                >
+                <label
+                  ><input type="checkbox" /> I consent to sharing my personal
+                  information for networking purposes in relation to the event
+                  and using photos and videos taken during the event for
+                  creating content related to Scale-Up Health.</label
+                >
+                <label
+                  ><input type="checkbox" /> I consent to receiving the event
+                  invite and other email communications related to Scale-Up
+                  Health.</label
+                >
+              </div>
+              <button type="submit" class="register-submit">REGISTER</button>
+            </form>
+          </div>
+
+          <!-- Info Section -->
+          <div class="register-info-row">
+            <div class="register-info-col right-info">
+              <h3>
+                WHAT IS <br /><span>SCALE-UP</span
+                ><span style="color: #ff5100">HEALTH?</span>
+              </h3>
+            </div>
+            <div class="register-info-col left-info">
+              <h4>
+                India's first community for healthcare &amp; life sciences
+                leaders.
+              </h4>
+              <p>
+                Scale-Up Health has become a cornerstone gathering for
+                healthcare and life sciences leaders, drawing over 180 senior
+                executives, founders, and policy experts in 2024. This year,
+                we’re looking forward to a bigger more insightful event.
+              </p>
+              <p>
+                The theme this year is
+                <b
+                  >India’s Healthcare Decade: Innovation, Expansion &amp; Global
+                  Influence</b
+                >, which will explore the country’s emerging leadership in
+                global healthcare innovation, delivery, and biopharma
+                advancement.
+              </p>
+              <p>
+                At Scale-Up Health, you can build new relationships, gain deep
+                insights and be part of a thriving ecosystem who come together
+                with a unified vision. Will you be there?
+              </p>
+              <p>Check out the full event agenda below:</p>
+            </div>
+          </div>
+
+          <!-- Quote Section -->
+          <div class="quote-block">
+            <img
+              src="assets/openquote.svg"
+              alt="Open Quote"
+              class="quote-icon open-quote"
+            />
+            <span class="quote-text">
+              The event was fantastically organized and well balanced. Enough
+              time allocated for networking and sessions
+              <span class="quote-author"
+                >- Koncepo Scientech International</span
+              >
+            </span>
+            <img
+              src="assets/closequote.svg"
+              alt="Close Quote"
+              class="quote-icon close-quote"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Agenda Section -->
+    <section class="agenda-section">
+      <div class="agenda-main-content">
+        <h2 class="agenda-title">AGENDA 2025</h2>
+        <div class="agenda-list">
+          <div class="agenda-item">Registration and High Tea</div>
+          <div class="agenda-separator">
+            <span class="agenda-line"></span>
+            <img
+              src="assets/triengle.svg"
+              alt="Separator"
+              class="agenda-triangle"
+            />
+            <span class="agenda-line"></span>
+          </div>
+          <div class="agenda-item">
+            The Road to India's First Billion-Dollar Drug
+          </div>
+          <div class="agenda-separator">
+            <span class="agenda-line"></span>
+            <img
+              src="assets/triengle.svg"
+              alt="Separator"
+              class="agenda-triangle"
+            />
+            <span class="agenda-line"></span>
+          </div>
+          <div class="agenda-item">
+            From Volume to Value-Based Healthcare:<br />Will India Set the
+            Global Standard?
+          </div>
+          <div class="agenda-separator">
+            <span class="agenda-line"></span>
+            <img
+              src="assets/triengle.svg"
+              alt="Separator"
+              class="agenda-triangle"
+            />
+            <span class="agenda-line"></span>
+          </div>
+          <div class="agenda-item">
+            Breakthrough Bharat:<br />Is India Ready for the Biotech Frontline?
+          </div>
+          <div class="agenda-separator">
+            <span class="agenda-line"></span>
+            <img
+              src="assets/triengle.svg"
+              alt="Separator"
+              class="agenda-triangle"
+            />
+            <span class="agenda-line"></span>
+          </div>
+          <div class="agenda-item">
+            GPT, meet GPs:<br />Will LLMs and Agents Be India's Front Door to
+            Care?
+          </div>
+          <div class="agenda-separator">
+            <span class="agenda-line"></span>
+            <img
+              src="assets/triengle.svg"
+              alt="Separator"
+              class="agenda-triangle"
+            />
+            <span class="agenda-line"></span>
+          </div>
+          <div class="agenda-item">Cocktails &amp; Dinner</div>
+        </div>
+      </div>
+    </section>
+    <!-- App Section -->
+    <section class="app-section">
+      <h2 class="app-headline">
+        INTRODUCING THE SCALE-UP HEALTH 2025 EVENT APP
+      </h2>
+      <div class="app-subheadline">Where Innovation Meets Interaction.</div>
+      <div class="app-mockup-box">
+        <img
+          src="assets/mobile-mock.png"
+          alt="Mobile Mockup"
+          class="app-mockup-img"
+        />
+        <div class="app-mockup-text">SCALE FASTER.<br />CONNECT SMARTER.</div>
+      </div>
+      <div class="app-features-desc">
+        With features designed to streamline your experience, the app makes it
+        easier than ever to:
+      </div>
+      <div class="app-features-row">
+        <div class="app-feature">
+          <span class="app-feature-key">Connect</span> with fellow attendees and
+          speakers
+        </div>
+        <div class="app-feature">
+          <span class="app-feature-key">Engage</span> through live polls,
+          Q&amp;A and interactive sessions
+        </div>
+        <div class="app-feature">
+          <span class="app-feature-key">Access</span> essential resources like
+          speaker bios and exclusive content
+        </div>
+      </div>
+    </section>
+    <section class="highlight-section">
+      <h2 class="highlight-title">Scale-Up Health Highlights</h2>
+      <div class="highlight-slider-container">
+        <div class="highlight-slider" id="highlightSlider">
+          <div class="highlight-slide">
+            <img src="assets/highlight-1.png" alt="Highlight 1" />
+          </div>
+          <div class="highlight-slide">
+            <img src="assets/highlight-2.png" alt="Highlight 2" />
+          </div>
+          <div class="highlight-slide">
+            <img src="assets/highlight-3.png" alt="Highlight 3" />
+          </div>
+          <div class="highlight-slide">
+            <img src="assets/highlight-4.png" alt="Highlight 4" />
+          </div>
+          <div class="highlight-slide">
+            <img src="assets/highlight-5.png" alt="Highlight 5" />
+          </div>
+          <div class="highlight-slide">
+            <img src="assets/highlight-6.png" alt="Highlight 6" />
+          </div>
+        </div>
+        <div class="highlight-slider-dots" id="highlightSliderDots"></div>
+      </div>
+    </section>
+    <section class="speaker-section">
+      <h2 class="speaker-title">SPEAKERS</h2>
+      <div class="speaker-grid">
+        <!-- Speaker Card 1 (template, pixel-perfect) -->
+        <div class="speaker-card-modern">
+          <div class="speaker-img-half">
+            <img
+              src="assets/speaker-1.png"
+              alt="Dr. Arpi Mehta"
+              class="speaker-img-modern"
+            />
+          </div>
+          <div class="speaker-info-half">
+            <div class="speaker-notch"></div>
+            <div class="speaker-info-content">
+              <div>
+                <div class="speaker-name">Dr. Arpi Mehta</div>
+                <div class="speaker-title-role">
+                  Co-founder &amp; CEO<br />MakeO
+                </div>
+              </div>
+              <a href="#" class="speaker-linkedin" title="LinkedIn">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M4.11819 6.49132V18.1719H0.588663V6.49132H4.11819ZM2.37231 4.89132C1.81644 4.89132 1.33612 4.68299 0.931362 4.26632C0.5266 3.84965 0.324219 3.3478 0.324219 2.76076C0.324219 2.17558 0.5266 1.68113 0.931362 1.27743C1.33612 0.873727 1.82274 0.671875 2.3912 0.671875C2.96147 0.671875 3.44268 0.873727 3.83485 1.27743C4.22702 1.68113 4.42311 2.17558 4.42311 2.76076C4.42311 3.3478 4.22073 3.84965 3.81596 4.26632C3.4112 4.68299 2.92999 4.89132 2.37231 4.89132ZM17.3242 11.7663V18.1719H13.7947V12.4691C13.7947 11.5061 13.7191 10.8293 13.568 10.4385C13.3144 9.73484 12.7765 9.38299 11.9544 9.38299C11.1323 9.38299 10.5566 9.69502 10.2274 10.3191C9.97554 10.7895 9.84962 11.4802 9.84962 12.3913V18.1719H6.32009V6.49132H9.73628V8.0941H9.77406C10.0259 7.57373 10.4307 7.13113 10.9883 6.76632C11.6198 6.37558 12.3277 6.18021 13.112 6.18021C14.2507 6.18021 15.1493 6.42743 15.8077 6.92188C16.3888 7.36447 16.7935 8.02836 17.022 8.91354C17.2235 9.64317 17.3242 10.5941 17.3242 11.7663Z"
+                    fill="#002A3B"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Speaker Card 1 (template, pixel-perfect) -->
+        <div class="speaker-card-modern">
+          <div class="speaker-img-half">
+            <img
+              src="assets/speaker-1.png"
+              alt="Dr. Arpi Mehta"
+              class="speaker-img-modern"
+            />
+          </div>
+          <div class="speaker-info-half">
+            <div class="speaker-notch"></div>
+            <div class="speaker-info-content">
+              <div>
+                <div class="speaker-name">Dr. Arpi Mehta</div>
+                <div class="speaker-title-role">
+                  Co-founder &amp; CEO<br />MakeO
+                </div>
+              </div>
+              <a href="#" class="speaker-linkedin" title="LinkedIn">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M4.11819 6.49132V18.1719H0.588663V6.49132H4.11819ZM2.37231 4.89132C1.81644 4.89132 1.33612 4.68299 0.931362 4.26632C0.5266 3.84965 0.324219 3.3478 0.324219 2.76076C0.324219 2.17558 0.5266 1.68113 0.931362 1.27743C1.33612 0.873727 1.82274 0.671875 2.3912 0.671875C2.96147 0.671875 3.44268 0.873727 3.83485 1.27743C4.22702 1.68113 4.42311 2.17558 4.42311 2.76076C4.42311 3.3478 4.22073 3.84965 3.81596 4.26632C3.4112 4.68299 2.92999 4.89132 2.37231 4.89132ZM17.3242 11.7663V18.1719H13.7947V12.4691C13.7947 11.5061 13.7191 10.8293 13.568 10.4385C13.3144 9.73484 12.7765 9.38299 11.9544 9.38299C11.1323 9.38299 10.5566 9.69502 10.2274 10.3191C9.97554 10.7895 9.84962 11.4802 9.84962 12.3913V18.1719H6.32009V6.49132H9.73628V8.0941H9.77406C10.0259 7.57373 10.4307 7.13113 10.9883 6.76632C11.6198 6.37558 12.3277 6.18021 13.112 6.18021C14.2507 6.18021 15.1493 6.42743 15.8077 6.92188C16.3888 7.36447 16.7935 8.02836 17.022 8.91354C17.2235 9.64317 17.3242 10.5941 17.3242 11.7663Z"
+                    fill="#002A3B"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Speaker Card 1 (template, pixel-perfect) -->
+        <div class="speaker-card-modern">
+          <div class="speaker-img-half">
+            <img
+              src="assets/speaker-1.png"
+              alt="Dr. Arpi Mehta"
+              class="speaker-img-modern"
+            />
+          </div>
+          <div class="speaker-info-half">
+            <div class="speaker-notch"></div>
+            <div class="speaker-info-content">
+              <div>
+                <div class="speaker-name">Dr. Arpi Mehta</div>
+                <div class="speaker-title-role">
+                  Co-founder &amp; CEO<br />MakeO
+                </div>
+              </div>
+              <a href="#" class="speaker-linkedin" title="LinkedIn">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M4.11819 6.49132V18.1719H0.588663V6.49132H4.11819ZM2.37231 4.89132C1.81644 4.89132 1.33612 4.68299 0.931362 4.26632C0.5266 3.84965 0.324219 3.3478 0.324219 2.76076C0.324219 2.17558 0.5266 1.68113 0.931362 1.27743C1.33612 0.873727 1.82274 0.671875 2.3912 0.671875C2.96147 0.671875 3.44268 0.873727 3.83485 1.27743C4.22702 1.68113 4.42311 2.17558 4.42311 2.76076C4.42311 3.3478 4.22073 3.84965 3.81596 4.26632C3.4112 4.68299 2.92999 4.89132 2.37231 4.89132ZM17.3242 11.7663V18.1719H13.7947V12.4691C13.7947 11.5061 13.7191 10.8293 13.568 10.4385C13.3144 9.73484 12.7765 9.38299 11.9544 9.38299C11.1323 9.38299 10.5566 9.69502 10.2274 10.3191C9.97554 10.7895 9.84962 11.4802 9.84962 12.3913V18.1719H6.32009V6.49132H9.73628V8.0941H9.77406C10.0259 7.57373 10.4307 7.13113 10.9883 6.76632C11.6198 6.37558 12.3277 6.18021 13.112 6.18021C14.2507 6.18021 15.1493 6.42743 15.8077 6.92188C16.3888 7.36447 16.7935 8.02836 17.022 8.91354C17.2235 9.64317 17.3242 10.5941 17.3242 11.7663Z"
+                    fill="#002A3B"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Speaker Card 1 (template, pixel-perfect) -->
+        <div class="speaker-card-modern">
+          <div class="speaker-img-half">
+            <img
+              src="assets/speaker-1.png"
+              alt="Dr. Arpi Mehta"
+              class="speaker-img-modern"
+            />
+          </div>
+          <div class="speaker-info-half">
+            <div class="speaker-notch"></div>
+            <div class="speaker-info-content">
+              <div>
+                <div class="speaker-name">Dr. Arpi Mehta</div>
+                <div class="speaker-title-role">
+                  Co-founder &amp; CEO<br />MakeO
+                </div>
+              </div>
+              <a href="#" class="speaker-linkedin" title="LinkedIn">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M4.11819 6.49132V18.1719H0.588663V6.49132H4.11819ZM2.37231 4.89132C1.81644 4.89132 1.33612 4.68299 0.931362 4.26632C0.5266 3.84965 0.324219 3.3478 0.324219 2.76076C0.324219 2.17558 0.5266 1.68113 0.931362 1.27743C1.33612 0.873727 1.82274 0.671875 2.3912 0.671875C2.96147 0.671875 3.44268 0.873727 3.83485 1.27743C4.22702 1.68113 4.42311 2.17558 4.42311 2.76076C4.42311 3.3478 4.22073 3.84965 3.81596 4.26632C3.4112 4.68299 2.92999 4.89132 2.37231 4.89132ZM17.3242 11.7663V18.1719H13.7947V12.4691C13.7947 11.5061 13.7191 10.8293 13.568 10.4385C13.3144 9.73484 12.7765 9.38299 11.9544 9.38299C11.1323 9.38299 10.5566 9.69502 10.2274 10.3191C9.97554 10.7895 9.84962 11.4802 9.84962 12.3913V18.1719H6.32009V6.49132H9.73628V8.0941H9.77406C10.0259 7.57373 10.4307 7.13113 10.9883 6.76632C11.6198 6.37558 12.3277 6.18021 13.112 6.18021C14.2507 6.18021 15.1493 6.42743 15.8077 6.92188C16.3888 7.36447 16.7935 8.02836 17.022 8.91354C17.2235 9.64317 17.3242 10.5941 17.3242 11.7663Z"
+                    fill="#002A3B"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Speaker Card 1 (template, pixel-perfect) -->
+        <div class="speaker-card-modern">
+          <div class="speaker-img-half">
+            <img
+              src="assets/speaker-1.png"
+              alt="Dr. Arpi Mehta"
+              class="speaker-img-modern"
+            />
+          </div>
+          <div class="speaker-info-half">
+            <div class="speaker-notch"></div>
+            <div class="speaker-info-content">
+              <div>
+                <div class="speaker-name">Dr. Arpi Mehta</div>
+                <div class="speaker-title-role">
+                  Co-founder &amp; CEO<br />MakeO
+                </div>
+              </div>
+              <a href="#" class="speaker-linkedin" title="LinkedIn">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M4.11819 6.49132V18.1719H0.588663V6.49132H4.11819ZM2.37231 4.89132C1.81644 4.89132 1.33612 4.68299 0.931362 4.26632C0.5266 3.84965 0.324219 3.3478 0.324219 2.76076C0.324219 2.17558 0.5266 1.68113 0.931362 1.27743C1.33612 0.873727 1.82274 0.671875 2.3912 0.671875C2.96147 0.671875 3.44268 0.873727 3.83485 1.27743C4.22702 1.68113 4.42311 2.17558 4.42311 2.76076C4.42311 3.3478 4.22073 3.84965 3.81596 4.26632C3.4112 4.68299 2.92999 4.89132 2.37231 4.89132ZM17.3242 11.7663V18.1719H13.7947V12.4691C13.7947 11.5061 13.7191 10.8293 13.568 10.4385C13.3144 9.73484 12.7765 9.38299 11.9544 9.38299C11.1323 9.38299 10.5566 9.69502 10.2274 10.3191C9.97554 10.7895 9.84962 11.4802 9.84962 12.3913V18.1719H6.32009V6.49132H9.73628V8.0941H9.77406C10.0259 7.57373 10.4307 7.13113 10.9883 6.76632C11.6198 6.37558 12.3277 6.18021 13.112 6.18021C14.2507 6.18021 15.1493 6.42743 15.8077 6.92188C16.3888 7.36447 16.7935 8.02836 17.022 8.91354C17.2235 9.64317 17.3242 10.5941 17.3242 11.7663Z"
+                    fill="#002A3B"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Speaker Card 1 (template, pixel-perfect) -->
+        <div class="speaker-card-modern">
+          <div class="speaker-img-half">
+            <img
+              src="assets/speaker-1.png"
+              alt="Dr. Arpi Mehta"
+              class="speaker-img-modern"
+            />
+          </div>
+          <div class="speaker-info-half">
+            <div class="speaker-notch"></div>
+            <div class="speaker-info-content">
+              <div>
+                <div class="speaker-name">Dr. Arpi Mehta</div>
+                <div class="speaker-title-role">
+                  Co-founder &amp; CEO<br />MakeO
+                </div>
+              </div>
+              <a href="#" class="speaker-linkedin" title="LinkedIn">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="vertical-align: middle"
+                >
+                  <path
+                    d="M4.11819 6.49132V18.1719H0.588663V6.49132H4.11819ZM2.37231 4.89132C1.81644 4.89132 1.33612 4.68299 0.931362 4.26632C0.5266 3.84965 0.324219 3.3478 0.324219 2.76076C0.324219 2.17558 0.5266 1.68113 0.931362 1.27743C1.33612 0.873727 1.82274 0.671875 2.3912 0.671875C2.96147 0.671875 3.44268 0.873727 3.83485 1.27743C4.22702 1.68113 4.42311 2.17558 4.42311 2.76076C4.42311 3.3478 4.22073 3.84965 3.81596 4.26632C3.4112 4.68299 2.92999 4.89132 2.37231 4.89132ZM17.3242 11.7663V18.1719H13.7947V12.4691C13.7947 11.5061 13.7191 10.8293 13.568 10.4385C13.3144 9.73484 12.7765 9.38299 11.9544 9.38299C11.1323 9.38299 10.5566 9.69502 10.2274 10.3191C9.97554 10.7895 9.84962 11.4802 9.84962 12.3913V18.1719H6.32009V6.49132H9.73628V8.0941H9.77406C10.0259 7.57373 10.4307 7.13113 10.9883 6.76632C11.6198 6.37558 12.3277 6.18021 13.112 6.18021C14.2507 6.18021 15.1493 6.42743 15.8077 6.92188C16.3888 7.36447 16.7935 8.02836 17.022 8.91354C17.2235 9.64317 17.3242 10.5941 17.3242 11.7663Z"
+                    fill="#002A3B"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function getNextSeptemberFirst() {
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        let target = new Date(currentYear, 8, 1, 0, 0, 0, 0); // September is month 8 (0-indexed)
+        if (now > target) {
+          target = new Date(currentYear + 1, 8, 1, 0, 0, 0, 0);
+        }
+        return target;
+      }
+
+      function updateCountdown() {
+        const now = new Date();
+        const target = getNextSeptemberFirst();
+        const diff = target - now;
+        if (diff <= 0) {
+          document.getElementById("countdown-days").textContent = "0";
+          document.getElementById("countdown-hours").textContent = "0";
+          document.getElementById("countdown-minutes").textContent = "0";
+          return;
+        }
+        const totalMinutes = Math.floor(diff / 1000 / 60);
+        const days = Math.floor(totalMinutes / (60 * 24));
+        const hours = Math.floor((totalMinutes % (60 * 24)) / 60);
+        const minutes = totalMinutes % 60;
+        document.getElementById("countdown-days").textContent = days;
+        document.getElementById("countdown-hours").textContent = hours;
+        document.getElementById("countdown-minutes").textContent = minutes;
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000 * 10); // update every 10 seconds
+    </script>
+    <script>
+      // Highlight Slider JS
+      (function () {
+        const slider = document.getElementById("highlightSlider");
+        const dotsContainer = document.getElementById("highlightSliderDots");
+        const slides = slider.querySelectorAll(".highlight-slide");
+        let slidesPerView = 3;
+        let currentIndex = 0;
+        let intervalId;
+        function updateSlidesPerView() {
+          if (window.innerWidth <= 600) {
+            slidesPerView = 1;
+          } else if (window.innerWidth <= 900) {
+            slidesPerView = 2;
+          } else {
+            slidesPerView = 3;
+          }
+        }
+        function updateSlider() {
+          const slideWidth = slider.offsetWidth / slidesPerView;
+          slider.style.transform = `translateX(-${
+            currentIndex * (100 / slidesPerView)
+          }%)`;
+          // Update dots
+          Array.from(dotsContainer.children).forEach((dot, i) => {
+            dot.classList.toggle("active", i === currentIndex);
+          });
+        }
+        function createDots() {
+          dotsContainer.innerHTML = "";
+          const dotCount = slides.length - slidesPerView + 1;
+          for (let i = 0; i < dotCount; i++) {
+            const dot = document.createElement("div");
+            dot.className = "highlight-slider-dot" + (i === 0 ? " active" : "");
+            dot.addEventListener("click", () => {
+              currentIndex = i;
+              updateSlider();
+              resetAutoplay();
+            });
+            dotsContainer.appendChild(dot);
+          }
+        }
+        function nextSlide() {
+          const maxIndex = slides.length - slidesPerView;
+          currentIndex = currentIndex + 1 > maxIndex ? 0 : currentIndex + 1;
+          updateSlider();
+        }
+        function resetAutoplay() {
+          clearInterval(intervalId);
+          intervalId = setInterval(nextSlide, 3000);
+        }
+        function onResize() {
+          updateSlidesPerView();
+          createDots();
+          if (currentIndex > slides.length - slidesPerView) {
+            currentIndex = 0;
+          }
+          updateSlider();
+        }
+        window.addEventListener("resize", onResize);
+        updateSlidesPerView();
+        createDots();
+        updateSlider();
+        intervalId = setInterval(nextSlide, 3000);
+      })();
+    </script>
+  </body>
+</html>

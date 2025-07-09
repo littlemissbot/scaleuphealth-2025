@@ -543,10 +543,6 @@
         align-items: flex-start;
         text-align: left;
       }
-      /* .right-info {
-        align-items: flex-end;
-        text-align: right;
-      } */
       .register-info-col h3 {
         font-family: "MBF Cyber Samurai", sans-serif;
         font-size: 2rem;
@@ -555,23 +551,26 @@
         margin-bottom: 12px;
         letter-spacing: 1px;
       }
-      .register-info-col span {
+      .register-info-col h3 span {
         font-size: 2.5rem;
-        color: #ff5100;
         font-family: "MBF Cyber Samurai", sans-serif;
       }
       .register-info-col h4 {
         font-size: 1.5rem;
         font-weight: 400;
+        line-height: 1;
+        margin-bottom: 12px;
         color: #fff;
         font-family: "Aloevera Display", sans-serif;
       }
-      .register-info-col b {
+      .register-info-col .highlight {
         color: #ff5100;
       }
       .register-info-col p {
+        font-family: "Simplon Norm", Arial, sans-serif;
         font-size: 1.05rem;
         margin-bottom: 12px;
+        line-height: 1.3;
         color: #e0e0e0;
       }
       /* Quote Block */
@@ -901,29 +900,35 @@
 
       /* Highlight Section Styles */
       .highlight-section {
-        width: 100%;
+        width: 100vw;
         background: #5be0c4;
-        padding: 64px 0 48px 0;
+        padding: 60px 0 60px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-left: calc(-50vw + 50%);
+        position: relative;
       }
       .highlight-title {
         font-family: "MBF Cyber Samurai", sans-serif;
-        color: #ff5100;
-        font-size: 2.2rem;
+        color: #002a3b;
+        font-size: 2.4rem;
         text-align: center;
         letter-spacing: 2px;
         margin-bottom: 18px;
-        font-weight: 400;
+        font-weight: 700;
+        margin-top: 0;
       }
       .highlight-slider-container {
-        width: 100%;
-        margin: 0 auto;
+        width: 100vw;
+        margin: 0;
         position: relative;
         overflow: hidden;
-        padding: 60px 0 60px 0;
+        padding: 0;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
       }
       .highlight-slider {
         display: flex;
@@ -1003,13 +1008,26 @@
         letter-spacing: 2px;
         margin-bottom: 32px;
         font-weight: 400;
+        margin-top: 48px;
       }
       .speaker-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 32px 32px;
+        gap: 48px 48px;
         width: 100%;
         margin: 0 auto;
+      }
+      @media (max-width: 900px) {
+        .speaker-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 32px 32px;
+        }
+      }
+      @media (max-width: 600px) {
+        .speaker-grid {
+          grid-template-columns: 1fr;
+          gap: 24px 24px;
+        }
       }
       .speaker-card {
         background: #fff;
@@ -1072,24 +1090,6 @@
         color: #222;
         margin-bottom: 8px;
         font-weight: 400;
-      }
-      @media (max-width: 900px) {
-        .speaker-grid {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      @media (max-width: 600px) {
-        .speaker-grid {
-          grid-template-columns: 1fr;
-        }
-        .speaker-card {
-          min-height: 140px;
-        }
-        .speaker-img {
-          width: 60px;
-          height: 90px;
-          margin: 0 10px 0 24px;
-        }
       }
       .speaker-card-modern {
         display: flex;
@@ -1162,15 +1162,6 @@
         color: #222;
         margin-bottom: 18px;
         font-weight: 400;
-      }
-      @media (max-width: 600px) {
-        .speaker-card-modern {
-          width: 98vw;
-          height: 160px;
-        }
-        .speaker-info-content {
-          padding: 18px 10px 10px 18px;
-        }
       }
     </style>
   </head>
@@ -1275,7 +1266,7 @@
               <div class="register-checkboxes">
                 <label
                   ><input type="checkbox" /> I have read, understood and consent
-                  to Eight Roads’ Privacy Policy, Cookie Policy and Terms of
+                  to Eight Roads' Privacy Policy, Cookie Policy and Terms of
                   Use.</label
                 >
                 <label
@@ -1298,36 +1289,38 @@
           <div class="register-info-row">
             <div class="register-info-col right-info">
               <h3>
-                WHAT IS <br /><span>SCALE-UP</span
-                ><span style="color: #ff5100">HEALTH?</span>
+                WHAT IS <br /><span>SCALE-UP</span>
+                <span class="highlight">HEALTH?</span>
               </h3>
             </div>
             <div class="register-info-col left-info">
-              <h4>
-                India's first community for healthcare &amp; life sciences
-                leaders.
-              </h4>
-              <p>
-                Scale-Up Health has become a cornerstone gathering for
-                healthcare and life sciences leaders, drawing over 180 senior
-                executives, founders, and policy experts in 2024. This year,
-                we’re looking forward to a bigger more insightful event.
-              </p>
-              <p>
-                The theme this year is
-                <b
-                  >India’s Healthcare Decade: Innovation, Expansion &amp; Global
-                  Influence</b
-                >, which will explore the country’s emerging leadership in
-                global healthcare innovation, delivery, and biopharma
-                advancement.
-              </p>
-              <p>
-                At Scale-Up Health, you can build new relationships, gain deep
-                insights and be part of a thriving ecosystem who come together
-                with a unified vision. Will you be there?
-              </p>
-              <p>Check out the full event agenda below:</p>
+              <div class="info-block">
+                <h4>
+                  India's first community for healthcare &amp; life sciences
+                  leaders.
+                </h4>
+                <p>
+                  Scale-Up Health has become a cornerstone gathering for
+                  healthcare and life sciences leaders, drawing over 180 senior
+                  executives, founders, and policy experts in 2024. This year,
+                  we're looking forward to a bigger more insightful event.
+                </p>
+                <p>
+                  The theme this year is
+                  <span class="highlight"
+                    >India's Healthcare Decade: Innovation, Expansion &amp;
+                    Global Influence</span
+                  >, which will explore the country's emerging leadership in
+                  global healthcare innovation, delivery, and biopharma
+                  advancement.
+                </p>
+                <p>
+                  At Scale-Up Health, you can build new relationships, gain deep
+                  insights and be part of a thriving ecosystem who come together
+                  with a unified vision. Will you be there?
+                </p>
+                <p>Check out the full event agenda below.</p>
+              </div>
             </div>
           </div>
 

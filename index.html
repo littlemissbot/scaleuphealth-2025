@@ -117,7 +117,7 @@
         font-family: Arial, sans-serif;
       }
 
-      .top-banner {
+      #scaleup-hero .top-banner {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -127,21 +127,21 @@
         z-index: 2;
       }
 
-      .top-banner img {
+      #scaleup-hero .top-banner img {
         max-height: 40px;
         width: auto;
       }
 
       @media (max-width: 768px) {
-        .top-banner {
+        #scaleup-hero .top-banner {
           padding: 16px 8px 0 8px;
         }
-        .top-banner img {
+        #scaleup-hero .top-banner img {
           max-height: 28px;
         }
       }
 
-      .hero {
+      #scaleup-hero {
         position: relative;
         height: 100vh;
         overflow: hidden;
@@ -150,7 +150,7 @@
         justify-content: center;
       }
 
-      .hero-video {
+      #scaleup-hero .hero-video {
         position: absolute;
         top: 0;
         left: 0;
@@ -160,7 +160,7 @@
         z-index: -1;
       }
 
-      .hero-overlay {
+      #scaleup-hero .hero-overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -170,7 +170,7 @@
         z-index: 0;
       }
 
-      .hero-content {
+      #scaleup-hero .hero-content {
         position: relative;
         z-index: 1;
         text-align: center;
@@ -183,28 +183,28 @@
         justify-content: space-between;
         align-items: center;
       }
-      .hero-main-content {
+      #scaleup-hero .hero-main-content {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         gap: 60px;
       }
-      .hero-column-1 {
+      #scaleup-hero .hero-column-1 {
         flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
       }
-      .hero-column-2 {
+      #scaleup-hero .hero-column-2 {
         flex: 1;
         text-align: left;
       }
-      .banner-center {
+      #scaleup-hero .banner-center {
         max-width: 100%;
         height: auto;
       }
-      .register-btn {
+      #scaleup-hero .register-btn {
         background: #ff5c00;
         color: white;
         border: none;
@@ -219,7 +219,7 @@
         text-transform: uppercase;
         letter-spacing: 1px;
       }
-      .register-btn:hover {
+      #scaleup-hero .register-btn:hover {
         background: #e54d00;
         transform: translateY(-2px);
       }
@@ -305,25 +305,25 @@
           font-size: 16px;
         }
       }
-      .hero-image {
+      #scaleup-hero .hero-image {
         display: none; /* Hide the placeholder image since we're using video */
       }
-      .hero-banner-row {
+      #scaleup-hero .hero-banner-row {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 24px;
       }
-      .hero-banner-row img {
+      #scaleup-hero .hero-banner-row img {
         max-height: 40px;
         width: auto;
       }
       @media (max-width: 768px) {
-        .hero-banner-row {
+        #scaleup-hero .hero-banner-row {
           margin-bottom: 16px;
         }
-        .hero-banner-row img {
+        #scaleup-hero .hero-banner-row img {
           max-height: 28px;
         }
       }
@@ -394,7 +394,7 @@
       }
 
       /* Registration & Info Section */
-      .register-section {
+      #scaleup-register {
         width: 100%;
         min-height: 100vh;
         background: linear-gradient(180deg, #4f6b74 0%, #042c39 100%);
@@ -405,7 +405,7 @@
         overflow: hidden;
         padding: 60px 0 60px 0;
       }
-      .register-flex {
+      #scaleup-register .register-flex {
         display: flex;
         width: 100%;
         max-width: 1400px;
@@ -415,7 +415,7 @@
         position: relative;
         z-index: 1;
       }
-      .register-parallax {
+      #scaleup-register .register-parallax {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -425,7 +425,7 @@
         align-items: flex-start;
         height: 100%;
       }
-      .parallax-img {
+      #scaleup-register .parallax-img {
         width: 260px;
         height: auto;
         position: sticky;
@@ -433,7 +433,7 @@
         left: 0;
         will-change: transform;
       }
-      .register-main-content {
+      #scaleup-register .register-main-content {
         flex: 1 1 0;
         display: flex;
         flex-direction: column;
@@ -670,7 +670,7 @@
       }
 
       /* Agenda Section Styles */
-      .agenda-section {
+      #scaleup-agenda {
         /* width: 100vw;
         min-height: 100vh; */
         background: linear-gradient(
@@ -685,7 +685,7 @@
         padding: 0;
         position: relative;
       }
-      .agenda-main-content {
+      #scaleup-agenda .agenda-main-content {
         width: 100%;
         max-width: 600px;
         margin: 0 auto;
@@ -696,7 +696,7 @@
         /* min-height: 100vh; */
         padding: 60px 0 60px 0;
       }
-      .agenda-title {
+      #scaleup-agenda .agenda-title {
         font-family: "MBF Cyber Samurai", sans-serif;
         color: #fff;
         font-size: 2.8rem;
@@ -765,7 +765,7 @@
       }
 
       /* App Section Styles */
-      .app-section {
+      #scaleup-app {
         width: 100%;
         background: #0e2a39;
         padding: 64px 0 48px 0;
@@ -774,7 +774,7 @@
         align-items: center;
         justify-content: center;
       }
-      .app-headline {
+      #scaleup-app .app-headline {
         font-family: "MBF Cyber Samurai", sans-serif;
         color: #ff5100;
         font-size: 2.2rem;
@@ -783,7 +783,7 @@
         margin-bottom: 18px;
         font-weight: 400;
       }
-      .app-subheadline {
+      #scaleup-app .app-subheadline {
         color: #fff;
         font-family: "Simplon Norm", Arial, sans-serif;
         font-size: 1.3rem;
@@ -899,7 +899,7 @@
       }
 
       /* Highlight Section Styles */
-      .highlight-section {
+      #scaleup-highlights {
         width: 100vw;
         background: #5be0c4;
         padding: 60px 0 60px 0;
@@ -910,7 +910,7 @@
         margin-left: calc(-50vw + 50%);
         position: relative;
       }
-      .highlight-title {
+      #scaleup-highlights .highlight-title {
         font-family: "MBF Cyber Samurai", sans-serif;
         color: #002a3b;
         font-size: 2.4rem;
@@ -991,7 +991,7 @@
       }
 
       /* Speaker Section Styles */
-      .speaker-section {
+      #scaleup-speakers {
         width: 100%;
         background: #042c39;
         padding: 64px 0 48px 0;
@@ -1000,7 +1000,7 @@
         align-items: center;
         justify-content: center;
       }
-      .speaker-title {
+      #scaleup-speakers .speaker-title {
         font-family: "MBF Cyber Samurai", sans-serif;
         color: #ff5100;
         font-size: 2.2rem;
@@ -1166,7 +1166,7 @@
     </style>
   </head>
   <body>
-    <section class="hero">
+    <section id="scaleup-hero" class="hero">
       <video class="hero-video" autoplay muted loop playsinline>
         <source src="assets/bg-banner.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -1230,17 +1230,17 @@
         </div>
         <div class="countdown-timer">
           <span class="countdown-label">Countdown Begins</span>
-          <span class="countdown-number" id="countdown-days">60</span
+          <span class="countdown-number" id="scaleup-countdown-days">60</span
           ><span class="countdown-unit">Days</span>
-          <span class="countdown-number" id="countdown-hours">59</span
+          <span class="countdown-number" id="scaleup-countdown-hours">59</span
           ><span class="countdown-unit">Hours</span>
-          <span class="countdown-number" id="countdown-minutes">59</span
+          <span class="countdown-number" id="scaleup-countdown-minutes">59</span
           ><span class="countdown-unit">Minutes</span>
         </div>
       </div>
     </section>
     <!-- Registration & Info Section -->
-    <section class="register-section">
+    <section id="scaleup-register" class="register-section">
       <div class="register-parallax">
         <img src="assets/triengle.svg" alt="Decorative" class="parallax-img" />
       </div>
@@ -1348,7 +1348,7 @@
       </div>
     </section>
     <!-- Agenda Section -->
-    <section class="agenda-section">
+    <section id="scaleup-agenda" class="agenda-section">
       <div class="agenda-main-content">
         <h2 class="agenda-title">AGENDA 2025</h2>
         <div class="agenda-list">
@@ -1417,7 +1417,7 @@
       </div>
     </section>
     <!-- App Section -->
-    <section class="app-section">
+    <section id="scaleup-app" class="app-section">
       <h2 class="app-headline">
         INTRODUCING THE SCALE-UP HEALTH 2025 EVENT APP
       </h2>
@@ -1449,10 +1449,11 @@
         </div>
       </div>
     </section>
-    <section class="highlight-section">
+    <!-- Highlights Section -->
+    <section id="scaleup-highlights" class="highlight-section">
       <h2 class="highlight-title">Scale-Up Health Highlights</h2>
       <div class="highlight-slider-container">
-        <div class="highlight-slider" id="highlightSlider">
+        <div class="highlight-slider" id="scaleupHighlightSlider">
           <div class="highlight-slide">
             <img src="assets/highlight-1.png" alt="Highlight 1" />
           </div>
@@ -1472,13 +1473,17 @@
             <img src="assets/highlight-6.png" alt="Highlight 6" />
           </div>
         </div>
-        <div class="highlight-slider-dots" id="highlightSliderDots"></div>
+        <div
+          class="highlight-slider-dots"
+          id="scaleupHighlightSliderDots"
+        ></div>
       </div>
     </section>
-    <section class="speaker-section">
+    <!-- Speakers Section -->
+    <section id="scaleup-speakers" class="speaker-section">
       <h2 class="speaker-title">SPEAKERS</h2>
       <div class="speaker-grid">
-        <!-- Speaker Card 1 (template, pixel-perfect) -->
+        <!-- Speaker Card Template -->
         <div class="speaker-card-modern">
           <div class="speaker-img-half">
             <img
@@ -1514,7 +1519,6 @@
             </div>
           </div>
         </div>
-        <!-- Speaker Card 1 (template, pixel-perfect) -->
         <div class="speaker-card-modern">
           <div class="speaker-img-half">
             <img
@@ -1550,7 +1554,6 @@
             </div>
           </div>
         </div>
-        <!-- Speaker Card 1 (template, pixel-perfect) -->
         <div class="speaker-card-modern">
           <div class="speaker-img-half">
             <img
@@ -1586,7 +1589,6 @@
             </div>
           </div>
         </div>
-        <!-- Speaker Card 1 (template, pixel-perfect) -->
         <div class="speaker-card-modern">
           <div class="speaker-img-half">
             <img
@@ -1622,7 +1624,6 @@
             </div>
           </div>
         </div>
-        <!-- Speaker Card 1 (template, pixel-perfect) -->
         <div class="speaker-card-modern">
           <div class="speaker-img-half">
             <img
@@ -1658,7 +1659,6 @@
             </div>
           </div>
         </div>
-        <!-- Speaker Card 1 (template, pixel-perfect) -->
         <div class="speaker-card-modern">
           <div class="speaker-img-half">
             <img
@@ -1696,7 +1696,9 @@
         </div>
       </div>
     </section>
+
     <script>
+      // Countdown JS
       function getNextSeptemberFirst() {
         const now = new Date();
         const currentYear = now.getFullYear();
@@ -1712,18 +1714,20 @@
         const target = getNextSeptemberFirst();
         const diff = target - now;
         if (diff <= 0) {
-          document.getElementById("countdown-days").textContent = "0";
-          document.getElementById("countdown-hours").textContent = "0";
-          document.getElementById("countdown-minutes").textContent = "0";
+          document.getElementById("scaleup-countdown-days").textContent = "0";
+          document.getElementById("scaleup-countdown-hours").textContent = "0";
+          document.getElementById("scaleup-countdown-minutes").textContent =
+            "0";
           return;
         }
         const totalMinutes = Math.floor(diff / 1000 / 60);
         const days = Math.floor(totalMinutes / (60 * 24));
         const hours = Math.floor((totalMinutes % (60 * 24)) / 60);
         const minutes = totalMinutes % 60;
-        document.getElementById("countdown-days").textContent = days;
-        document.getElementById("countdown-hours").textContent = hours;
-        document.getElementById("countdown-minutes").textContent = minutes;
+        document.getElementById("scaleup-countdown-days").textContent = days;
+        document.getElementById("scaleup-countdown-hours").textContent = hours;
+        document.getElementById("scaleup-countdown-minutes").textContent =
+          minutes;
       }
 
       updateCountdown();
@@ -1732,8 +1736,10 @@
     <script>
       // Highlight Slider JS
       (function () {
-        const slider = document.getElementById("highlightSlider");
-        const dotsContainer = document.getElementById("highlightSliderDots");
+        const slider = document.getElementById("scaleupHighlightSlider");
+        const dotsContainer = document.getElementById(
+          "scaleupHighlightSliderDots"
+        );
         const slides = slider.querySelectorAll(".highlight-slide");
         let slidesPerView = 3;
         let currentIndex = 0;

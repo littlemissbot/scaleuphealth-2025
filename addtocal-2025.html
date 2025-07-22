@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to Calendar 2025</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fafbfc;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 600px;
+        margin: 48px auto 0 auto;
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        padding: 36px 32px 32px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        color: #222;
+      }
+      .event-detail {
+        color: #555;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+      }
+      .event-meta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #888;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      .event-meta svg {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+      }
+      .desc {
+        color: #888;
+        margin-top: 1.5rem;
+        font-size: 1.05rem;
+        margin-bottom: 1.5rem;
+      }
+      .calendar-section {
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+      .calendar-title {
+        font-weight: 600;
+        font-size: 1.15rem;
+        margin-bottom: 1.1rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #222;
+      }
+      .calendar-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px 18px;
+        margin-bottom: 0.5rem;
+      }
+      .calendar-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #fff;
+        border: 1.5px solid #e6e6e6;
+        border-radius: 12px;
+        padding: 0.85rem 0.5rem 0.85rem 1.1rem;
+        font-size: 1.08rem;
+        color: #222;
+        text-decoration: none;
+        font-weight: 500;
+        transition: border 0.15s, box-shadow 0.15s, background 0.15s;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+        min-width: 0;
+        min-height: 44px;
+      }
+      .calendar-btn:hover {
+        border: 1.5px solid #ff5a00;
+        background: #fff7f2;
+        box-shadow: 0 2px 8px rgba(255, 90, 0, 0.07);
+      }
+      .calendar-btn img,
+      .calendar-btn svg {
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+      }
+      .register-form {
+        margin-top: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .form-row {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+      .form-row.center {
+        justify-content: center;
+      }
+      .register-form input {
+        flex: 1;
+        padding: 1.2rem 1rem;
+        border: 2px solid #ff5a00;
+        border-radius: 4px;
+        font-size: 1.15rem;
+        outline: none;
+        transition: border 0.2s, box-shadow 0.2s;
+        background: #fff;
+        color: #222;
+      }
+      .register-form input:focus {
+        border-color: #ff5a00;
+        box-shadow: 0 0 0 2px #ffe3d1;
+      }
+      .register-form input::placeholder {
+        color: #888;
+        opacity: 1;
+      }
+      .submit-btn {
+        background: #ff5a00;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        padding: 1rem 3.5rem;
+        cursor: pointer;
+        transition: background 0.18s, box-shadow 0.18s;
+        box-shadow: 0 2px 8px rgba(255, 90, 0, 0.08);
+      }
+      .submit-btn:hover {
+        background: #e04d00;
+        box-shadow: 0 4px 16px rgba(255, 90, 0, 0.13);
+      }
+      @media (max-width: 700px) {
+        .container {
+          padding: 18px 4vw 18px 4vw;
+        }
+        .calendar-buttons {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+        .form-row {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .submit-btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="event-title">Scale-Up Health 2025 Conference</h1>
+      <div class="event-meta">
+        <span>🕒</span>
+        <span id="event-date">Wed, Sep 10, 2025, 2:00 pm – 9:00 pm</span>
+      </div>
+      <div class="event-meta">
+        <span>📍</span>
+        <a id="event-location" href="#" target="_blank"
+          >The Great Room - Four Seasons Hotel, Worli, Mumbai</a
+        >
+      </div>
+      <div class="desc" id="event-description">
+        We request all attendees to register once they arrive at the venue, so
+        please do be there on time. Please join us for high tea from 2:00 pm
+        onwards. We will start the event at 3:00 pm.
+      </div>
+      <div class="calendar-section">
+        <div class="calendar-title"><span>📅</span> Add to Calendar</div>
+        <div class="calendar-buttons">
+          <a
+            class="calendar-btn"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Scale-Up+Health+2025+Conference&dates=20250910T083000Z/20250910T153000Z&details=We+request+all+attendees+to+register+once+they+arrive+at+the+venue%2C+so+please+do+be+there+on+time.+Please+join+us+for+high+tea+from+2%3A00+pm+onwards.+We+will+start+the+event+at+3%3A00+pm.&location=The+Great+Room+-+Four+Seasons+Hotel%2C+Worli%2C+Mumbai"
+            target="_blank"
+            >Google</a
+          >
+          <a
+            class="calendar-btn"
+            href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0AURL:%0ADTSTART:20250910T083000Z%0ADTEND:20250910T153000Z%0ASUMMARY:Scale-Up%20Health%202025%20Conference%0ADESCRIPTION:We%20request%20all%20attendees%20to%20register%20once%20they%20arrive%20at%20the%20venue%2C%20so%20please%20do%20be%20there%20on%20time.%20Please%20join%20us%20for%20high%20tea%20from%202%3A00%20pm%20onwards.%20We%20will%20start%20the%20event%20at%203%3A00%20pm.%0ALOCATION:The%20Great%20Room%20-%20Four%20Seasons%20Hotel%2C%20Worli%2C%20Mumbai%0AEND:VEVENT%0AEND:VCALENDAR"
+            target="_blank"
+            >Apple</a
+          >
+          <a
+            class="calendar-btn"
+            href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Scale-Up%20Health%202025%20Conference&body=We%20request%20all%20attendees%20to%20register%20once%20they%20arrive%20at%20the%20venue%2C%20so%20please%20do%20be%20there%20on%20time.%20Please%20join%20us%20for%20high%20tea%20from%202%3A00%20pm%20onwards.%20We%20will%20start%20the%20event%20at%203%3A00%20pm.&startdt=2025-09-10T14:00:00&enddt=2025-09-10T21:00:00&location=The%20Great%20Room%20-%20Four%20Seasons%20Hotel%2C%20Worli%2C%20Mumbai"
+            target="_blank"
+            >Outlook</a
+          >
+          <a
+            class="calendar-btn"
+            href="https://calendar.yahoo.com/?v=60&view=d&type=20&title=Scale-Up+Health+2025+Conference&st=20250910T083000Z&et=20250910T153000Z&desc=We+request+all+attendees+to+register+once+they+arrive+at+the+venue%2C+so+please+do+be+there+on+time.+Please+join+us+for+high+tea+from+2%3A00+pm+onwards.+We+will+start+the+event+at+3%3A00+pm.&in_loc=The+Great+Room+-+Four+Seasons+Hotel%2C+Worli%2C+Mumbai"
+            target="_blank"
+            >Yahoo</a
+          >
+          <a
+            class="calendar-btn"
+            href="https://outlook.office.com/calendar/0/deeplink/compose?subject=Scale-Up%20Health%202025%20Conference&body=We%20request%20all%20attendees%20to%20register%20once%20they%20arrive%20at%20the%20venue%2C%20so%20please%20do%20be%20there%20on%20time.%20Please%20join%20us%20for%20high%20tea%20from%202%3A00%20pm%20onwards.%20We%20will%20start%20the%20event%20at%203%3A00%20pm.&startdt=2025-09-10T14:00:00&enddt=2025-09-10T21:00:00&location=The%20Great%20Room%20-%20Four%20Seasons%20Hotel%2C%20Worli%2C%20Mumbai"
+            target="_blank"
+            >Office365</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
